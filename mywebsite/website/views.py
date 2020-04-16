@@ -5,3 +5,6 @@ class HomePageView(TemplateView):
     
 class ProjectsPageView(TemplateView):
     template_name = 'projects.html'
+    
+class WikiPageView(TemplateView):
+    template_name = 'wiki.html'    
