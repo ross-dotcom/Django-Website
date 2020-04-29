@@ -1,5 +1,14 @@
 {% extends 'nav.html' %}
 
 {% block content %}
+
 <font face='courier'><center><h1>Projects</h1></center></font>
+
+{% for p in object_list %}
+<font face='courier'><div class='website'>
+    <h3>{{ p.project_name }}</h3>
+    <a href="">{{ p.project_link }}</a>
+    <p>{{ p.project_desc }}</p>
+</div></font>
+{% endfor %}
 {% endblock %}

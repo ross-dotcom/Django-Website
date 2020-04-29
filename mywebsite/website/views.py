@@ -1,12 +1,17 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
+
+# Create your views here.
+
+from . models import MyProjects
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
     
 class AboutPageView(TemplateView):
-    template_name = 'about.html'    
+    template_name = 'about.html'
     
-class ProjectsPageView(TemplateView):
+class ProjectsPageView(ListView):
+    model = MyProjects
     template_name = 'projects.html'
     
 class WikiPageView(TemplateView):
