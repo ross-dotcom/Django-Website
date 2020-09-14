@@ -55,6 +55,36 @@
                 display: table;
                 clear: both;
             }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .c {
+                float: left;
+                width: 50%;
+                padding: 0 10px;
+            }
+            .r {margin: 0 -5px;}
+            .r:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                padding: 16px;
+                text-align: center;
+                background-color: white;
+            }
+            @media screen and (max-width: 600px) {
+                .c {
+                  width: 100%;
+                  display: block;
+                  margin-bottom: 20px;
+                }
+            }
         </style>
         <script>
             window.onscroll = function() {myFunction()};
@@ -90,45 +120,38 @@
         </div>
         <br>
         <div class="row">
-          <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;">
-          </div>
-          <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;">
-            <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
-            <p style="font-family: sans-serif; line-height: 1.6;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
-          </div>
-          <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;">
-          </div>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"  id="A">
+                <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
+                <p style="font-family: sans-serif; line-height: 1.6;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
+            </div>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
         </div>
-        <div class="row">
-            <div class="column">
-                <fieldset style="color: black; border: 0; border-right: 1px solid gray;">
-                    <h3 style="font-weight: bold;">Software Development</h3>
-                    <p>Automation, Machine Learning, and AI are among the few things that got me interested in software development.</p>
+        <br>
+        <div class="r">
+            <div class="c">
+              <div class="card">
+                <h3 style="font-weight: bold;">Software Development</h3>
+                    <p><i>Automation, Machine Learning, and AI are among the few things that got me interested in software development.</i></p>
                     <br>
                     <p style="color: rgb(30, 89, 138);"><b>Skills:</b></p>
                     <p>Python, PostgresQL, Django</p>
                     <br>
                     <p style="color: rgb(30, 89, 138);"><b>Dev Tools:</b></p>
                     <p>Github, Komodo Edit, Terminal</p>
-                </fieldset>
+              </div>
             </div>
-            <div class="column">
-                <fieldset style="color: black; border: 0; border-right: 1px solid gray; padding-bottom: 26.5px;">
-                    <h3 style="font-weight: bold;">Front-End Development</h3>
-                    <p>I like to code from scratch and enjoy bringing things to life in the browser!</p>
+            <div class="c">
+              <div class="card">
+                <h3 style="font-weight: bold; padding: 9px;">Front-End Development</h3>
+                    <p><i>I like to code from scratch and enjoy bringing things to life in the browser!</i></p>
                     <br>
                     <p style="color: rgb(30, 89, 138);"><b>Skills:</b></p>
                     <p>HTML, CSS</p>
                     <br>
                     <p style="color: rgb(30, 89, 138);"><b>Dev Tools:</b></p>
                     <p>Github, Komodo Edit, Terminal</p>
-                </fieldset>
-            </div>
-            <div class="column">
-                <fieldset style="color: black; border: 0;">
-                    <h3 style="font-weight: bold;">Additional Skills</h3>
-                        <p>Testing & debugging, Automation, Problem Solving</p>
-                </fieldset>
+              </div>
             </div>
         </div>
         <br>
