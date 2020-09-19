@@ -9,8 +9,8 @@
         <style>
             body {font-family:arial;}
             .line {position: fixed; top: 0; z-index: 1; width: 100%; background-color: #f1f1f1;}
-            .progress-container {width: 100%; height: 8px; background: #ccc;}
-            .progress-bar {height: 8px; background: #4caf50; width: 0%;}
+            .progress-container {width: 100%; height: 4px; background: #ccc;}
+            .progress-bar {height: 4px; background: red; width: 0%;}
             dl {font-family:courier;}
             .header {text-align: center; padding: 100px;}
             .container {position: absolute; margin: 10px; width: auto;}
@@ -19,7 +19,56 @@
             .topnav a:hover {background-color: #ddd; color: black;}
             h1 {font-family: courier; text-align: center; font-size: 60px; color: black; padding: 0px;}
             h2 {text-align: center;}
-            .about_me {background-color: rgb(30, 89, 138); color: black; text-align: center;}
+            .hi {
+                float: center;
+                width: 100%;
+                padding: 50px;
+                height: 0px;
+                color: white;
+                text-align: center;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .c {
+                float: left;
+                width: 50%;
+                padding: 0 10px;
+            }
+            .r {margin: 0 -10px;}
+            .r:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                text-align: center;
+                background-color: white;
+            }
+            @media screen and (max-width: 600px) {
+                .c {
+                  width: 100%;
+                  display: block;
+                  margin-bottom: 20px;
+                }
+            }
+            .project_c {
+                float: left;
+                width: 33.3%;
+                padding: 0 10px;
+            }
+            @media screen and (max-width: 600px) {
+                .project_c {
+                  width: 100%;
+                  display: block;
+                  margin-bottom: 20px;
+                }
+            }
             footer a {color:#000000;}
             footer a:hover {color:blue;}
             .fa {
@@ -41,49 +90,6 @@
             .fa-twitter {
                 background: #55ACEE;
                 color: white;
-            }
-            .column {
-                float: left;
-                width: 33.33%;
-                padding: 0px;
-                height: 300px;
-                color: white;
-                text-align: center;
-            }
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            * {
-                box-sizing: border-box;
-            }
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .c {
-                float: left;
-                width: 50%;
-                padding: 0 10px;
-            }
-            .r {margin: 0 -5px;}
-            .r:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-                padding: 16px;
-                text-align: center;
-                background-color: white;
-            }
-            @media screen and (max-width: 600px) {
-                .c {
-                  width: 100%;
-                  display: block;
-                  margin-bottom: 20px;
-                }
             }
         </style>
         <script>
@@ -119,14 +125,10 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"  id="A">
-                <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
-                <p style="font-family: sans-serif; line-height: 1.6;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
-            </div>
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
-        </div>
+        <section class="hi" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 300px;"  id="A">
+            <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
+            <p style="font-family: sans-serif; line-height: 1.9; text-align: center;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
+        </section>
         <br>
         <div class="r">
             <div class="c">
@@ -155,7 +157,43 @@
             </div>
         </div>
         <br>
-        <br>
+        <h2 id="P" style="font-family: courier; font-size: 45px;">My Projects</h2>
+        <p style="font-size: 25px; text-align: center;"><i>Talk is cheap. Show me the code.</i></p>
+        <div class="r">
+            <div class="project_c">
+              <div class="card">
+                <h3 style="color: rgb(30, 89, 138);"><b>HTML and CSS</b></h3>
+                <h3 style="font-weight: bold;">Wesley Ross - Aspiring Python & Web Developer</h3>
+                    <p><i>After completing a Udemy course on 13 April 2020, I decided to create my own website using the basic skills I've learnt. The purpose of this site is to showcase the HTML and CSS skills I've obtained and display all projects I've created.</i></p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Site address:</b></p>
+                    <a href="https://ross-dotcom.github.io">https://ross-dotcom.github.io</a>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Code:</b></p>
+                    <a href="https://https://github.com/ross-dotcom/ross-dotcom.github.io">https://github.com/ross-dotcom/ross-dotcom.github.io</a>
+              </div>
+            </div>
+            <div class="project_c">
+              <div class="card">
+                <h3 style="color: rgb(30, 89, 138);"><b>Python (BeautifulSoup)</b></h3>
+                <h3 style="font-weight: bold;">Web Scraper</h3>
+                    <p><i>The Python script web_scraper.py scrapes a football league table, outputs specific data from the table and displays the output in a CSV.</i></p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Code:</b></p>
+                    <a href="https://github.com/ross-dotcom/Scraper">https://github.com/ross-dotcom/Scraper</a>
+              </div>
+            </div>
+            <div class="project_c">
+              <div class="card">
+                <h3 style="color: rgb(30, 89, 138);"><b>Python</b></h3>
+                <h3 style="font-weight: bold;">Data Structures & Algorithms</h3>
+                    <p><i>Object-oriented programming, arrays, queues, linked lists, breadth first search and bubble sort.</i></p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Code:</b></p>
+                    <a href="https://github.com/ross-dotcom/Data-Structures-and-Algorithms">https://github.com/ross-dotcom/Data-Structures-and-Algorithms</a>
+              </div>
+            </div>
+        </div>
         <br>
         <fieldset>
             <legend style="font-weight: bold;">Certifications</legend>
@@ -189,40 +227,6 @@
                 <dd>Working within a Linux Debian environment, creating and running Python scripts and software programs, support and maintenance of front-end and back-end applications and systems, supporting computer hardware and software issues, trouble-shooting production issues and assist with support on customer queries and software testing.</dd>
             </dl>
         </fieldset>
-        <br>
-        <div style="background-color: #e6e6fa; border: 0;">
-            <br>
-            <h2 id="P"><span style="color: rgb(30, 89, 138);">MY </span>PROJECTS</h2>
-            <dl>
-                <dt style="text-align: center;"><span style="font-weight: bold;">1. Data Structures and Algorithms (Python)</span></dt>
-                <br>
-                <dd style="text-align: center;"><a href="https://github.com/ross-dotcom/Data-Structures-and-Algorithms">https://github.com/ross-dotcom/Data-Structures-and-Algorithms</a></dd>
-                <br>
-                <dd style="text-align: center;">Object-oriented programming, arrays, queues, linked lists, breadth first search and bubble sort.</dd>
-            </dl>
-            <dl>
-                <dt style="text-align: center;"><span style="font-weight: bold;">2. Django Website (Django 2, Python, HTML, CSS)</span></dt>
-                <br>
-                <dd style="text-align: center;"><a href="https://github.com/ross-dotcom/Django-Website">https://github.com/ross-dotcom/Django-Website</a></dd>
-                <br>
-                <dd style="text-align: center;">After completing a Udemy course on 13 April 2020, I decided to create my own website using the basic skills I've learnt. The purpose of this site is to add anything and everything I've learnt regarding development, to practice and test my new skill.</dd>
-            </dl>
-            <dl>
-                <dt style="text-align: center;"><span style="font-weight: bold;">3. Word Frequency (Python)</span></dt>
-                <br>
-                <dd style="text-align: center;"><a href="https://github.com/ross-dotcom/Word-Frequency">https://github.com/ross-dotcom/Word-Frequency</a></dd>
-                <br>
-                <dd style="text-align: center;">Reads a file, breaks the line into words, strips whitespace and punctuation from words, and converts them to lowercase. The function stats() further counts the frequency of each word as well as the percentage and inserts the results into two dictionaries.</dd>
-            </dl>
-            <dl>
-                <dt style="text-align: center;"><span style="font-weight: bold;">4. Web Scraper (Python)</span></dt>
-                <br>
-                <dd style="text-align: center;"><a href="https://github.com/ross-dotcom/Scraper">https://github.com/ross-dotcom/Scraper</a></dd>
-                <br>
-                <dd style="text-align: center;">The Python script web_scraper.py is a web scraper. It scrapes the entire table, outputs specific data from the table and displays the output in a CSV.</dd>
-            </dl>
-            <br>
-        </div>
         <br>
         <footer style="text-align: center;">
             <p>
